@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --choc: #d0b8a8;
+  --cream: #fef6ee;
+  --purple: #85586f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--purple);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.icon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+nav {
+  font-size: 18px;
+  padding-block: 30px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 100px auto;
+}
+
+.hero__desc h1 {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero__desc p {
+  font-size: 18px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.cta__contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--purple);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.cta__contact a,
+.cta__portfolio a {
+  display: flex;
+  align-items: center;
+}
+
+.cta__portfolio a {
+  font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.socials p {
+  font-weight: 700;
+  margin-right: 70px;
+}
+
+.socials__lists {
+  display: flex;
+  gap: 20px;
+}
+
+.socials__lists__item {
+  background-color: var(--purple);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.socials__lists__item a {
+  display: grid;
+  place-items: center;
+}
+
+.skills__experience {
+  background-color: var(--cream);
+  padding: 100px;
+}
+
+.skills h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  font-size: 18px;
+}
+
+.skills h3 {
+  font-size: 39px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.skills__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.skills__cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe8d6;
+  padding: 20px 25px;
+  border-radius: 16px;
+}
+
+.skills__cards__item__img {
+  display: grid;
+  place-items: center;
+  background-color: var(--purple);
+  border-radius: 50%;
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+
+.skills__cards__item__title {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.experience h3 {
+  font-weight: 700;
+  font-size: 39px;
+  margin-bottom: 15px;
+}
+
+.experience hr {
+  border: 2px solid var(--choc);
+  border-radius: 20px;
+  margin-bottom: 31px;
+}
+
+.experience__list {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-bottom: 38px;
+}
+
+.experience__list__year,
+.position__name {
+  font-weight: 700;
+  font-size: 22px;
+}
